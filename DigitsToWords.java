@@ -38,10 +38,7 @@ public class DigitsToWords {
             }else if((input.length() >= 4) && (input.length() <=6 )){
                 System.out.println(thousandMethod(input)); 
                 break;
-            }/*else {
-                System.out.println("The input is above Thounsand digits.\nPlease enter smaller or equal to Thousand digits.");
-                digitToWord();
-            }        */   
+            }
         }
         
     }
