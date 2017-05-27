@@ -6,21 +6,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Library Library = new Library();
+        Library library = new Library();
 
-        Library.addBook(new Book("Cheese Problems Solved", "Woodhead Publishing", 2007));
-        Library.addBook(new Book("The Stinky Cheese Man and Other Fairly Stupid Tales", "Penguin Group", 1992));
-        Library.addBook(new Book("NHL Hockey", "Stanley Kupp", 1952));
-        Library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
+        library.addBook(new Book("Cheese Problems Solved", "Woodhead Publishing", 2007));
+        library.addBook(new Book("The Stinky Cheese Man and Other Fairly Stupid Tales", "Penguin Group", 1992));
+        library.addBook(new Book("NHL Hockey", "Stanley Kupp", 1952));
+        library.addBook(new Book("Battle Axes", "Tom A. Hawk", 1851));
 
-        Library.printBooks();
+        library.printBooks();
         
-        for (Book book : Library.searchByTitle("CHEESE")) {
+        for (Book book : library.searchByTitle("CHEESE")) {
             System.out.println(book);
         }
 
         System.out.println("---");
-        for (Book book : Library.searchByPublisher("PENGUIN  ")) {
+        for (Book book : library.searchByPublisher("PENGUIN  ")) {
             System.out.println(book);
         }
     }

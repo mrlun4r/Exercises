@@ -21,7 +21,7 @@ public class Library {
     public ArrayList<Book> searchByTitle(String title) {
         ArrayList<Book> found = new ArrayList<Book>();
         for(Book result : this.book){
-            if(title.contains(result.title())){
+            if(title.contains(result.getTitle())){
                 found.add(result);
             }
         }
@@ -31,7 +31,7 @@ public class Library {
     public ArrayList<Book> searchByPublisher(String publisher){
         ArrayList<Book> found = new ArrayList<Book>();
         for(int i =0; i < book.size(); i++){
-            if(publisher.contains(this.book.get(i).publisher())){
+            if(publisher.contains(this.book.get(i).getPublisher())){
                 found.add(this.book.get(i));
             }
         }
