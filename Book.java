@@ -1,7 +1,3 @@
-//The class should have the constructor public Book(String title, String publisher, int year) and methods public String title(), 
-//public String publisher(), public int year() and public String toString().
-package exercises;
-
 public class Book {
 
     String title;
