@@ -1,6 +1,3 @@
-/* package whatever; // don't place package name! */
-package exercises;
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
