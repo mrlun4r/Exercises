@@ -1,41 +1,30 @@
 public class Book {
 
-    String title;
-    String publisher;
-    int year;
+    private String title;
+    private String publisher;
+    private int date;
 
-// main function already exists in "Main" class, main function shouldnt be declared more than once
-/*
-    public static void main(String[] args) {
-        Book cheese = new Book("Cheese Problems Solved", "Woodhead Publishing", 2007);
-
-        System.out.println(cheese.getTitle());
-        System.out.println(cheese.getPublisher());
-        System.out.println(cheese.getYear());
-
-        System.out.println(cheese);
-    }
-*/
-    public Book(String title, String publisher, int year) {
+    public Book(String title, String publisher, int date) {
         this.title = title;
         this.publisher = publisher;
-        this.year = year;
+        this.date = date;
     }
 
+    //getters
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public String getPublisher() {
-        return publisher;
+        return this.publisher;
     }
 
-    public int getYear() {
-        return year;
-    }
-    
-    public String toString(){
-    	return "Title: " +title+ " \t Publisher: "+ publisher + " \t year: "+year;
+    public int getDate() {
+        return this.date;
     }
 
+    @Override
+    public String toString() {
+        return "Title: " + title + " \t Publisher: " + publisher + " \t year: " + date;
+    }
 }
