@@ -15,7 +15,7 @@ public class Main {
 
         library.printBooks();
         
-        for (Book book : library.searchByTitle("CHEESE")) {
+        for (Book book : library.searchByTitle(library.readInput())) {
             System.out.println(book);
         }
 
